@@ -5,8 +5,6 @@ const router = express.Router();
 router.get('/', (req, res) => {
 
     if (req.isAuthenticated()) {
-        // They were authenticated! User may do the next thing
-        // Note! They may not be Authorized to do all things
         console.log('req.user:', req.user);
         const queryText = `SELECT * FROM "secret"
                            WHERE "secrecy_level" < $1;`;
