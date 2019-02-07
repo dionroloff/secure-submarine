@@ -10,6 +10,7 @@ const router = express.Router();
 router.get('/', rejectUnauthenticated, (req, res) => {
   // Send back user object from the session (previously queried from the database)
   res.send(req.user);
+
 });
 
 // Handles POST request with new user data
@@ -39,5 +40,6 @@ router.post('/logout', (req, res) => {
   req.logout();
   res.sendStatus(200);
 });
+
 
 module.exports = router;
