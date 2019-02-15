@@ -8,9 +8,8 @@ import React from 'react';
 const AboutPage = () => (
   <div>
     <div>
-      <p>
-        This about page is for anyone to read!
-      </p>
+      <p>This about page is for anyone to read!</p>
+      <p>On the Secure Submarine, there are many secrets. The Secure Submaire web portal prevents or allows users to view different secrets based on their clearance level.</p>
     </div>
   </div>
 );

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import axios from 'axios';
+import Members from './../Members/Members';
 
 class Users extends Component {
 
@@ -26,7 +27,13 @@ class Users extends Component {
         console.log(this.state.users);
         return(
             <div>
-                {JSON.stringify(this.state.users)}
+                <h3>Members of the Security Submarine:</h3>
+                <ul>
+                    {this.state.users.map((member, i) => {
+                        return <Members key={i} name={member.username} />
+                    })}
+                    {/* {JSON.stringify(this.state.users)} */}
+                </ul>
             </div>
         )
     }
