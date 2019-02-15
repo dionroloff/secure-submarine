@@ -30,7 +30,7 @@ Run npm run client
 Navigate to localhost:3000
 ```
 
-#Technologies Used
+Technologies Used
 ```
 React.js
 Redux and Sagas
