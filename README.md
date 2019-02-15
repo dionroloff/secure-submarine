@@ -9,7 +9,8 @@ Password: tuna
 Username: Captain Borodin 
 Passowrd: shark
 
-##Prerequisites
+Prerequisites:
+
 Before you get started, make sure you have the following software installed on your computer:
 ```
 Node.js
@@ -17,7 +18,7 @@ PostrgeSQL
 Nodemon
 ```
 
-##Getting Started
+Getting Started
 ```
 Run npm install
 Start postgres if not running already by using brew services start postgresql
@@ -26,7 +27,9 @@ Run npm run client
 Navigate to localhost:3000
 ```
 
-##Technologies Used
+Technologies Used
+```
 React.js
 Redux and Sagas
 Passport.js
+```
